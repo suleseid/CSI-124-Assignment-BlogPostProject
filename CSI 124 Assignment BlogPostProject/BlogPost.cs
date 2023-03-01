@@ -67,7 +67,7 @@ namespace CSI_124_Assignment_BlogPostProject
         }
         public override string ToString()
         {
-            return $"{_posted.ToShortDateString()}_ {_header}";
+            return $"{_posted.ToShortDateString()}_ {_header}, {_body}";
         }
     }
 }

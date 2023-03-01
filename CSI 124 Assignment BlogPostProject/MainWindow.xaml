@@ -15,7 +15,7 @@
         <Label x:Name="lbHeader" Content="Header" Canvas.Left="33" Canvas.Top="29" Width="108" FontSize="14" FontWeight="Bold" Height="28"/>
         <TextBox x:Name="txtBoxHeader" Canvas.Left="33" TextWrapping="Wrap" Canvas.Top="73" Width="245" Height="25"/>
         <Label x:Name="lbBody" Content="Body" Canvas.Left="33" Canvas.Top="104" Width="114" FontWeight="Bold" FontSize="14"/>
-        <RichTextBox Height="224" Width="245" Canvas.Left="33" Canvas.Top="138">
+        <RichTextBox x:Name="RtxtBoxBody" Height="224" Width="245" Canvas.Left="33" Canvas.Top="138">
             <FlowDocument>
                 <Paragraph>
                     <Run x:Name="runBody" Text="Body Text "/>
@@ -28,12 +28,12 @@
         <TextBox x:Name="txtBoxB" Canvas.Left="79" TextWrapping="Wrap" Canvas.Top="509" Width="81" RenderTransformOrigin="0.473,-2.262"/>
         <Button x:Name="btnHeader" Content="Header" Canvas.Left="178" Canvas.Top="440" Width="87" Height="29" FontSize="14" RenderTransformOrigin="0.459,-0.773"/>
         <Button x:Name="btnBody" Content="Body" Canvas.Left="178" Canvas.Top="489" Width="87" Height="29" FontSize="14"/>
-        <Button x:Name="___No_Name_btnGentColorr" Content="Generate Color" Canvas.Left="52" Canvas.Top="540" Width="226" Height="28" FontSize="14"/>
+        <Button x:Name="btnGentColorr" Content="Generate Color" Canvas.Left="52" Canvas.Top="540" Width="226" Height="28" FontSize="14" />
         <Label x:Name="lbB" Content="B" Canvas.Left="52" Canvas.Top="500" Height="35" FontSize="16" RenderTransformOrigin="0.991,-0.513"/>
         <Label x:Name="lbG" Content="G" Canvas.Left="52" Canvas.Top="458" RenderTransformOrigin="0.447,0.714" FontSize="16"/>
         <Label x:Name="lbR" Content="R" Canvas.Left="52" Canvas.Top="427" RenderTransformOrigin="0.526,1.369" FontSize="16"/>
         <Button x:Name="btnCreatePost" Content="Create Post" Canvas.Left="33" Canvas.Top="605" Width="245" Click="Button_Click" Height="33" FontSize="16"/>
-        <RichTextBox Height="622" Width="201" Canvas.Left="302" Canvas.Top="16">
+        <RichTextBox x:Name="RichtxtBox" Height="622" Width="201" Canvas.Left="302" Canvas.Top="16">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="RichTextBox"/>
