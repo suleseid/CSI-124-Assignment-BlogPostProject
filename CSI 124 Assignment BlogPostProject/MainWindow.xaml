@@ -5,42 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSI_124_Assignment_BlogPostProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="649" Width="736">
+        Title="MainWindow" Height="523" Width="777">
     <Window.Resources>
         <Color x:Key="SolidColorBrushColor1">#FFEFA698</Color>
         <Color x:Key="SolidColorBrushColor2">#FFEFA698</Color>
         <Color x:Key="SolidColorBrushColor3">#FFEFA798</Color>
     </Window.Resources>
-    <Canvas Margin="0,0,0,-16" Background="#FFF4C6BE">
+    <Canvas Margin="0,0,10,5" Background="#FFF4C6BE">
         <Label x:Name="lbHeader" Content="Header" Canvas.Left="33" Canvas.Top="29" Width="108" FontSize="14" FontWeight="Bold" Height="28"/>
         <TextBox x:Name="txtBoxHeader" Canvas.Left="33" TextWrapping="Wrap" Canvas.Top="73" Width="245" Height="25"/>
         <Label x:Name="lbBody" Content="Body" Canvas.Left="33" Canvas.Top="104" Width="114" FontWeight="Bold" FontSize="14"/>
-        <RichTextBox x:Name="RtxtBoxBody" Height="224" Width="245" Canvas.Left="33" Canvas.Top="138">
+        <RichTextBox x:Name="RtxtBoxBody" Height="131" Width="245" Canvas.Left="33" Canvas.Top="138">
             <FlowDocument>
                 <Paragraph>
                     <Run x:Name="runBody" Text="Body Text "/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Label x:Name="lbColor" Content="Color" Canvas.Left="134" Canvas.Top="371" RenderTransformOrigin="0.579,1.562" Width="52" FontSize="16" FontWeight="Normal"/>
-        <TextBox x:Name="txtBoxR" Canvas.Left="80" TextWrapping="Wrap" Canvas.Top="440" Width="80"/>
-        <TextBox x:Name="txtBoxG" Canvas.Left="79" TextWrapping="Wrap" Canvas.Top="471" Width="81" RenderTransformOrigin="0.461,-2.244"/>
-        <TextBox x:Name="txtBoxB" Canvas.Left="79" TextWrapping="Wrap" Canvas.Top="509" Width="81" RenderTransformOrigin="0.473,-2.262"/>
-        <Button x:Name="btnHeader" Content="Header" Canvas.Left="178" Canvas.Top="440" Width="87" Height="29" FontSize="14" RenderTransformOrigin="0.459,-0.773"/>
-        <Button x:Name="btnBody" Content="Body" Canvas.Left="178" Canvas.Top="489" Width="87" Height="29" FontSize="14"/>
-        <Button x:Name="btnGentColorr" Content="Generate Color" Canvas.Left="52" Canvas.Top="540" Width="226" Height="28" FontSize="14" />
-        <Label x:Name="lbB" Content="B" Canvas.Left="52" Canvas.Top="500" Height="35" FontSize="16" RenderTransformOrigin="0.991,-0.513"/>
-        <Label x:Name="lbG" Content="G" Canvas.Left="52" Canvas.Top="458" RenderTransformOrigin="0.447,0.714" FontSize="16"/>
-        <Label x:Name="lbR" Content="R" Canvas.Left="52" Canvas.Top="427" RenderTransformOrigin="0.526,1.369" FontSize="16"/>
-        <Button x:Name="btnCreatePost" Content="Create Post" Canvas.Left="33" Canvas.Top="605" Width="245" Click="Button_Click" Height="33" FontSize="16"/>
-        <RichTextBox x:Name="RichtxtBox" Height="622" Width="201" Canvas.Left="302" Canvas.Top="16">
+        <Label x:Name="lbColor" Content="Color" Canvas.Left="122" Canvas.Top="274" RenderTransformOrigin="0.495,0.569" Width="66" FontSize="16" FontWeight="Normal" Height="27"/>
+        <TextBox x:Name="txtBoxR" Canvas.Left="90" TextWrapping="Wrap" Canvas.Top="314" Width="80"/>
+        <TextBox x:Name="txtBoxG" Canvas.Left="89" TextWrapping="Wrap" Canvas.Top="356" Width="81" RenderTransformOrigin="0.514,0.633"/>
+        <TextBox x:Name="txtBoxB" Canvas.Left="87" TextWrapping="Wrap" Canvas.Top="388" Width="81" RenderTransformOrigin="0.531,0.633"/>
+        <Button x:Name="btnHeader" Content="Header" Canvas.Left="191" Canvas.Top="314" Width="87" Height="25" FontSize="14" RenderTransformOrigin="0.49,0.428"/>
+        <Button x:Name="btnBody" Content="Body" Canvas.Left="191" Canvas.Top="365" Width="87" Height="25" FontSize="14"/>
+        <Button x:Name="btnGentColorr" Content="Generate Color" Canvas.Left="87" Canvas.Top="414" Width="186" Height="23" FontSize="14" />
+        <Label x:Name="lbB" Content="B" Canvas.Left="68" Canvas.Top="379" Height="35" FontSize="16" RenderTransformOrigin="0.991,-0.513"/>
+        <Label x:Name="lbG" Content="G" Canvas.Left="66" Canvas.Top="343" RenderTransformOrigin="0.447,0.714" FontSize="16"/>
+        <Label x:Name="lbR" Content="R" Canvas.Left="67" Canvas.Top="303" RenderTransformOrigin="0.526,1.369" FontSize="16"/>
+        <Button x:Name="btnCreatePost" Content="Create Post" Canvas.Left="72" Canvas.Top="451" Width="216" Click="Button_Click" Height="30" FontSize="16"/>
+        <RichTextBox x:Name="RichtxtBox" Height="465" Width="190" Canvas.Left="302" Canvas.Top="16">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="RichTextBox"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <ListBox x:Name="lbDisplay" Height="622" Width="186" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="527" Canvas.Top="16"/>
+        <ListBox x:Name="lbDisplay" Height="465" Width="229" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="512" Canvas.Top="16"/>
     </Canvas>
 
 </Window>
